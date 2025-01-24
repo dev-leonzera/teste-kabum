@@ -1,0 +1,15 @@
+{
+    "name": "leona/backend",
+    "autoload": {
+        "psr-4": {
+            "Leona\\Backend\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Leonardo Andrade",
+            "email": "leonandrade22@gmail.com"
+        }
+    ],
+    "require": {}
+}
