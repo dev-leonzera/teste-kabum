@@ -1,16 +1,13 @@
 <?php
 include '../config/database.php';
 
-// Implementar as operações CRUD para clientes
 
-// Exemplo: Listar todos os clientes
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $stmt = $pdo->query("SELECT * FROM clients");
     $clients = $stmt->fetchAll(PDO::FETCH_ASSOC);
     echo json_encode($clients);
 }
 
-// Exemplo: Criar um novo cliente
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'] ?? '';
     $data_nascimento = $_POST['data_nascimento'] ?? '';

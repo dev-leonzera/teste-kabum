@@ -1,9 +1,6 @@
 <?php
 include '../config/database.php';
 
-// Implementar as operações CRUD para endereços
-
-// Exemplo: Listar endereços de um cliente específico
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $client_id = $_GET['client_id'] ?? '';
 
@@ -13,7 +10,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     echo json_encode($addresses);
 }
 
-// Exemplo: Adicionar um novo endereço
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $client_id = $_POST['client_id'] ?? '';
     $logradouro = $_POST['logradouro'] ?? '';
